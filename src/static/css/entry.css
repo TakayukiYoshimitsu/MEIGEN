@@ -1,0 +1,285 @@
+form{
+    position: absolute ;    /* 位置（基準） */
+    width: 100%    /* 横幅（基準） */
+}
+
+/* レスポンシブル 1400px */
+@media (min-width: 1400px) {
+    /* 名言 */
+    .meigen{
+        /* 文字 */
+        position: absolute ;    /* 文字位置（基準） */
+        top: 150px;    /* 文字位置（上からの高さ） */
+        left: 35%;    /* Box位置（中央） */
+        font-size: 20px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: nowrap;  /* 機能；折り返さない */
+    }
+    .meigen_textarea{
+        /* Box */
+        position: absolute ;    /* Box位置（基準） */
+        top: 150px;    /* Box位置（上からの高さ） */
+        left: 45%;    /* Box位置（中央） */
+        font-size: 20px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: pre-wrap;  /* 機能；改行する */
+        width:350px;    /* 横幅 */
+        height:150px;    /* 縦幅 */
+    }
+
+    /* 作者 */
+    .author{
+        /* 文字 */
+        position: absolute ;    /* 文字位置（基準） */
+        top: 350px;    /* 文字位置（上からの高さ） */
+        left: 35%;    /* Box位置（中央） */
+        font-size: 20px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: nowrap;  /* 機能；折り返さない */
+    }
+    .input_author{
+        /* Box */
+        position: absolute ;    /* Box位置（基準） */
+        top: 350px;    /* Box位置（上からの高さ） */
+        left: 45%;    /* Box位置（中央） */
+        font-size: 20px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: nowrap;  /* 機能；折り返さない */
+        width:300px;    /* 横幅 */
+    }
+
+    /* ボタン */
+    .btn-primary{
+        /* Box */
+        position: absolute ;    /* Box位置（基準） */
+        top: 500px;    /* Box位置（上からの高さ） */
+        left: 50%;    /* Box位置（中央） */
+        transform: translateY(-50%) translateX(-50%);    /* Box位置（中央） */
+        white-space: nowrap;  /* 機能；折り返さない */
+        width:120px;    /* 横幅 */
+    }
+}
+/* レスポンシブル 1400px */
+@media (max-width: 1400px) {
+    /* 名言 */
+    .meigen{
+        /* 文字 */
+        position: absolute ;    /* 文字位置（基準） */
+        top: 150px;    /* 文字位置（上からの高さ） */
+        left: 35%;    /* Box位置（中央） */
+        font-size: 20px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: nowrap;  /* 機能；折り返さない */
+    }
+    .meigen_textarea{
+        /* Box */
+        position: absolute ;    /* Box位置（基準） */
+        top: 150px;    /* Box位置（上からの高さ） */
+        left: 45%;    /* Box位置（中央） */
+        font-size: 20px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: pre-wrap;  /* 機能；改行する */
+        width:300px;    /* 横幅 */
+        height:150px;    /* 縦幅 */
+    }
+
+    /* 作者 */
+    .author{
+        /* 文字 */
+        position: absolute ;    /* 文字位置（基準） */
+        top: 350px;    /* 文字位置（上からの高さ） */
+        left: 35%;    /* Box位置（中央） */
+        font-size: 20px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: nowrap;  /* 機能；折り返さない */
+    }
+    .input_author{
+        /* Box */
+        position: absolute ;    /* Box位置（基準） */
+        top: 350px;    /* Box位置（上からの高さ） */
+        left: 45%;    /* Box位置（中央） */
+        font-size: 20px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: nowrap;  /* 機能；折り返さない */
+    }
+
+    /* ボタン */
+    .btn-primary{
+        /* Box */
+        position: absolute ;    /* Box位置（基準） */
+        top: 500px;    /* Box位置（上からの高さ） */
+        left: 50%;    /* Box位置（中央） */
+        transform: translateY(-50%) translateX(-50%);    /* Box位置（中央） */
+        white-space: nowrap;  /* 機能；折り返さない */
+        width:120px;    /* 横幅 */
+    }
+}
+/* レスポンシブル 992px */
+@media (max-width: 992px) {
+    /* 名言 */
+    .meigen{
+        /* 文字 */
+        position: absolute ;    /* 文字位置（基準） */
+        top: 150px;    /* 文字位置（上からの高さ） */
+        left: 25%;    /* Box位置（中央） */
+        font-size: 20px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: nowrap;  /* 機能；折り返さない */
+    }
+    .meigen_textarea{
+        /* Box */
+        position: absolute ;    /* Box位置（基準） */
+        top: 150px;    /* Box位置（上からの高さ） */
+        left: 40%;    /* Box位置（中央） */
+        font-size: 20px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: pre-wrap;  /* 機能；改行する */
+        width:300px;    /* 横幅 */
+        height:150px;    /* 縦幅 */
+    }
+
+    /* 作者 */
+    .author{
+        /* 文字 */
+        position: absolute ;    /* 文字位置（基準） */
+        top: 350px;    /* 文字位置（上からの高さ） */
+        left: 25%;    /* Box位置（中央） */
+        font-size: 20px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: nowrap;  /* 機能；折り返さない */
+    }
+    .input_author{
+        /* Box */
+        position: absolute ;    /* Box位置（基準） */
+        top: 350px;    /* Box位置（上からの高さ） */
+        left: 40%;    /* Box位置（中央） */
+        font-size: 20px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: nowrap;  /* 機能；折り返さない */
+    }
+
+    /* ボタン */
+    .btn-primary{
+        /* Box */
+        position: absolute ;    /* Box位置（基準） */
+        top: 500px;    /* Box位置（上からの高さ） */
+        left: 50%;    /* Box位置（中央） */
+        transform: translateY(-50%) translateX(-50%);    /* Box位置（中央） */
+        white-space: nowrap;  /* 機能；折り返さない */
+        width:120px;    /* 横幅 */
+    }
+}
+/* レスポンシブル 768px */
+@media (max-width: 768px) {
+    /* 名言 */
+    .meigen{
+        /* 文字 */
+        position: absolute ;    /* 文字位置（基準） */
+        top: 150px;    /* 文字位置（上からの高さ） */
+        left: 15%;    /* Box位置（中央） */
+        font-size: 20px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: nowrap;  /* 機能；折り返さない */
+    }
+    .meigen_textarea{
+        /* Box */
+        position: absolute ;    /* Box位置（基準） */
+        top: 150px;    /* Box位置（上からの高さ） */
+        left: 30%;    /* Box位置（中央） */
+        font-size: 20px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: pre-wrap;  /* 機能；改行する */
+        width:300px;    /* 横幅 */
+        height:150px;    /* 縦幅 */
+    }
+
+    /* 作者 */
+    .author{
+        /* 文字 */
+        position: absolute ;    /* 文字位置（基準） */
+        top: 350px;    /* 文字位置（上からの高さ） */
+        left: 15%;    /* Box位置（中央） */
+        font-size: 20px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: nowrap;  /* 機能；折り返さない */
+    }
+    .input_author{
+        /* Box */
+        position: absolute ;    /* Box位置（基準） */
+        top: 350px;    /* Box位置（上からの高さ） */
+        left: 30%;    /* Box位置（中央） */
+        font-size: 20px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: nowrap;  /* 機能；折り返さない */
+    }
+
+    /* ボタン */
+    .btn-primary{
+        /* Box */
+        position: absolute ;    /* Box位置（基準） */
+        top: 500px;    /* Box位置（上からの高さ） */
+        left: 50%;    /* Box位置（中央） */
+        transform: translateY(-50%) translateX(-50%);    /* Box位置（中央） */
+        white-space: nowrap;  /* 機能；折り返さない */
+        width:120px;    /* 横幅 */
+    }
+}
+/* レスポンシブル 575px */
+@media (max-width: 576px) {
+    /* 名言 */
+    .meigen{
+        /* 文字 */
+        position: absolute ;    /* 文字位置（基準） */
+        top: 150px;    /* 文字位置（上からの高さ） */
+        left: 15%;    /* Box位置（中央） */
+        font-size: 20px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: nowrap;  /* 機能；折り返さない */
+    }
+    .meigen_textarea{
+        /* Box */
+        position: absolute ;    /* Box位置（基準） */
+        top: 150px;    /* Box位置（上からの高さ） */
+        left: 30%;    /* Box位置（中央） */
+        font-size: 20px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: pre-wrap;  /* 機能；改行する */
+        width:250px;    /* 横幅 */
+        height:150px;    /* 縦幅 */
+    }
+
+    /* 作者 */
+    .author{
+        /* 文字 */
+        position: absolute ;    /* 文字位置（基準） */
+        top: 350px;    /* 文字位置（上からの高さ） */
+        left: 15%;    /* Box位置（中央） */
+        font-size: 20px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: nowrap;  /* 機能；折り返さない */
+    }
+    .input_author{
+        /* Box */
+        position: absolute ;    /* Box位置（基準） */
+        top: 350px;    /* Box位置（上からの高さ） */
+        left: 30%;    /* Box位置（中央） */
+        font-size: 20px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        width:250px;    /* 横幅 */
+    }
+
+    /* ボタン */
+    .btn-primary{
+        /* Box */
+        position: absolute ;    /* Box位置（基準） */
+        top: 500px;    /* Box位置（上からの高さ） */
+        left: 50%;    /* Box位置（中央） */
+        transform: translateY(-50%) translateX(-50%);    /* Box位置（中央） */
+        white-space: nowrap;  /* 機能；折り返さない */
+        width:120px;    /* 横幅 */
+    }
+}
+
+
+
+

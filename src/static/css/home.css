@@ -1,0 +1,275 @@
+/* レスポンシブル 1400px */
+@media (min-width: 1400px) {
+    /* 日付表示 */
+    .date{
+        /* 文字 */
+        position: absolute ;    /* 文字位置（基準） */
+        top: 100px;    /* 文字位置（上からの高さ） */
+        width: 100%;    /* 横幅の設定 */
+        text-align:center;    /* 文字位置（中央） */
+        font-size: 65px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: nowrap;  /* 機能；折り返さない */
+    }
+
+    /* 時間表示 */
+    .time{
+        /* 文字 */
+        position: absolute ;    /* 文字位置（基準） */
+        top: 200px;    /* 文字位置（上からの高さ） */
+        width: 100%;    /* 横幅の設定 */
+        text-align:center;    /* 文字位置（中央） */
+        font-size: 150px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: nowrap;  /* 機能；折り返さない */
+    }
+
+    /* 名言表示 */
+    .rounded{
+        /* Box */
+        position: absolute ;    /* Box位置（基準） */
+        top: 600px;    /* Box位置（上からの高さ） */
+        width: 70%;    /* 横幅の設定 */
+        height: 25%;
+        border: 1px solid;  /* 枠の幅 */
+        border-color: #CEF9DC;  /* 枠の色 */
+        left: 50%;    /* Box位置（中央） */
+        transform: translateY(-50%) translateX(-50%);    /* Box位置（中央） */
+        /* 文字 */
+        font-size: 35px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        text-align:left;    /* 文字位置（左） */
+        word-wrap: break-word;    /* Box内の文字の折り返し */
+    }
+
+    /* 作者表示 */
+    .author{
+        position: absolute ;    /* 文字位置（基準） */
+        bottom: 0%;    /* 文字位置（↓からの高さ） */
+        width: 90%;    /* 横幅の設定 */
+        font-size: 30px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        text-align:right;    /* 文字位置（右） */
+    }
+
+}
+
+/* レスポンシブル 1400px */
+@media (max-width: 1400px) {
+    /* 日付表示 */
+    .date{
+        /* 文字 */
+        position: absolute ;    /* 文字位置（基準） */
+        top: 100px;    /* 文字位置（上からの高さ） */
+        width: 100%;    /* 横幅の設定 */
+        text-align:center;    /* 文字位置（中央） */
+        font-size: 45px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: nowrap;  /* 機能；折り返さない */
+    }
+
+    /* 時間表示 */
+    .time{
+        /* 文字 */
+        position: absolute ;    /* 文字位置（基準） */
+        top: 200px;    /* 文字位置（上からの高さ） */
+        width: 100%;    /* 横幅の設定 */
+        text-align:center;    /* 文字位置（中央） */
+        font-size: 100px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: nowrap;  /* 機能；折り返さない */
+    }
+
+    /* 名言表示 */
+    .rounded{
+        /* Box */
+        position: absolute ;    /* 文字位置（基準） */
+        top: 500px;    /* 文字位置（上からの高さ） */
+        width: 70%;    /* 横幅の設定 */
+        height: 25%;
+        border: 1px solid;  /* 枠の幅 */
+        border-color: #CEF9DC;  /* 枠の色 */
+        left: 50%;    /* Box位置（中央） */
+        transform: translateY(-50%) translateX(-50%);    /* Box位置（中央） */
+        /* 文字 */
+        font-size: 30px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        text-align:left;    /* 文字位置（左） */
+        word-wrap: break-word;    /* Box内の文字の折り返し */
+    }
+
+    /* 作者表示 */
+    .author{
+        position: absolute ;    /* 文字位置（基準） */
+        bottom: 0%;    /* 文字位置（↓からの高さ） */
+        width: 90%;    /* 横幅の設定 */
+        font-size: 25px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        text-align:right;    /* 文字位置（右） */
+    }
+}
+
+/* レスポンシブル 992px */
+@media (max-width: 992px) {
+    /* 日付表示 */
+    .date{
+        /* 文字 */
+        position: absolute ;    /* 文字位置（基準） */
+        top: 100px;    /* 文字位置（上からの高さ） */
+        width: 100%;    /* 横幅の設定 */
+        text-align:center;    /* 文字位置（中央） */
+        font-size: 30px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: nowrap;  /* 機能；折り返さない */
+    }
+
+    /* 時間表示 */
+    .time{
+        /* 文字 */
+        position: absolute ;    /* 文字位置（基準） */
+        top: 200px;    /* 文字位置（上からの高さ） */
+        width: 100%;    /* 横幅の設定 */
+        text-align:center;    /* 文字位置（中央） */
+        font-size: 60px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: nowrap;  /* 機能；折り返さない */
+    }
+
+    /* 名言表示 */
+    .rounded{
+        /* Box */
+        position: absolute ;    /* 文字位置（基準） */
+        top: 450px;    /* 文字位置（上からの高さ） */
+        width: 70%;    /* 横幅の設定 */
+        height: 20%;
+        border: 1px solid;  /* 枠の幅 */
+        border-color: #CEF9DC;  /* 枠の色 */
+        left: 50%;    /* Box位置（中央） */
+        transform: translateY(-50%) translateX(-50%);    /* Box位置（中央） */
+        /* 文字 */
+        font-size: 20px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        text-align:left;    /* 文字位置（左） */
+        word-wrap: break-word;    /* Box内の文字の折り返し */
+    }
+
+    /* 作者表示 */
+    .author{
+        position: absolute ;    /* 文字位置（基準） */
+        bottom: 0%;    /* 文字位置（↓からの高さ） */
+        width: 90%;    /* 横幅の設定 */
+        font-size: 20px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        text-align:right;    /* 文字位置（右） */
+    }
+}
+
+/* レスポンシブル 768px */
+@media (max-width: 768px) {
+    /* 日付表示 */
+    .date{
+        /* 文字 */
+        position: absolute ;    /* 文字位置（基準） */
+        top: 100px;    /* 文字位置（上からの高さ） */
+        width: 100%;    /* 横幅の設定 */
+        text-align:center;    /* 文字位置（中央） */
+        font-size: 25px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: nowrap;  /* 機能；折り返さない */
+    }
+
+    /* 時間表示 */
+    .time{
+        /* 文字 */
+        position: absolute ;    /* 文字位置（基準） */
+        top: 200px;    /* 文字位置（上からの高さ） */
+        width: 100%;    /* 横幅の設定 */
+        text-align:center;    /* 文字位置（中央） */
+        font-size: 50px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: nowrap;  /* 機能；折り返さない */
+    }
+
+    /* 名言表示 */
+    .rounded{
+        /* Box */
+        position: absolute ;    /* 文字位置（基準） */
+        top: 450px;    /* 文字位置（上からの高さ） */
+        width: 70%;    /* 横幅の設定 */
+        height: 25%;
+        border: 1px solid;  /* 枠の幅 */
+        border-color: #CEF9DC;  /* 枠の色 */
+        left: 50%;    /* Box位置（中央） */
+        transform: translateY(-50%) translateX(-50%);    /* Box位置（中央） */
+        /* 文字 */
+        font-size: 25px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        text-align:left;    /* 文字位置（左） */
+        word-wrap: break-word;    /* Box内の文字の折り返し */
+    }
+
+    /* 作者表示 */
+    .author{
+        position: absolute ;    /* 文字位置（基準） */
+        bottom: 0%;    /* 文字位置（↓からの高さ） */
+        width: 90%;    /* 横幅の設定 */
+        font-size: 15px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        text-align:right;    /* 文字位置（右） */
+    }
+}
+
+/* レスポンシブル 575px */
+@media (max-width: 576px) {
+    /* 日付表示 */
+    .date{
+        /* 文字 */
+        position: absolute ;    /* 文字位置（基準） */
+        top: 100px;    /* 文字位置（上からの高さ） */
+        width: 100%;    /* 横幅の設定 */
+        text-align:center;    /* 文字位置（中央） */
+        font-size: 20px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: nowrap;  /* 機能；折り返さない */
+    }
+
+    /* 時間表示 */
+    .time{
+        /* 文字 */
+        position: absolute ;    /* 文字位置（基準） */
+        top: 200px;    /* 文字位置（上からの高さ） */
+        width: 100%;    /* 横幅の設定 */
+        text-align:center;    /* 文字位置（中央） */
+        font-size: 40px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        white-space: nowrap;  /* 機能；折り返さない */
+    }
+
+    /* 名言表示 */
+    .rounded{
+        /* Box */
+        position: absolute ;    /* 文字位置（基準） */
+        top: 450px;    /* 文字位置（上からの高さ） */
+        width: 70%;    /* 横幅の設定 */
+        height: 25%;
+        border: 1px solid;  /* 枠の幅 */
+        border-color: #CEF9DC;  /* 枠の色 */
+        left: 50%;    /* Box位置（中央） */
+        transform: translateY(-50%) translateX(-50%);    /* Box位置（中央） */
+        /* 文字 */
+        font-size: 20px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        text-align:left;    /* 文字位置（左） */
+        word-wrap: break-word;    /* Box内の文字の折り返し */
+    }
+
+    /* 作者表示 */
+    .author{
+        position: absolute ;    /* 文字位置（基準） */
+        bottom: 0%;    /* 文字位置（↓からの高さ） */
+        width: 90%;    /* 横幅の設定 */
+        font-size: 15px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        text-align:right;    /* 文字位置（右） */
+    }
+}

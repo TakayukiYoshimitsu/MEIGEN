@@ -1,0 +1,225 @@
+form{
+    position: absolute ;    /* 位置（基準） */
+    width: 100%    /* 横幅（基準） */
+}
+
+/* レスポンシブル 1400px */
+@media (min-width: 1400px) {
+    /* 名言一覧 */
+    .table {
+        /* テーブル */
+        position: absolute ;    /* テーブル（基準） */
+        top: 300px;    /* テーブル（上からの高さ） */
+        left: 50%;    /* テーブル（中央） */
+        transform: translateY(-50%) translateX(-50%);    /* テーブル（中央） */
+        width: 950px;    /* 横幅 */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        font-size: 20px;    /* 文字サイズ */
+    }
+    /* 検索 */
+    .search_all{
+        /* Box */
+        position: absolute ;    /* Box（基準） */
+        top: 130px;    /* Box（上からの高さ） */
+        left: 55%;    /* Box（左） */
+        display: inline-flex;    /* 要素の横並び */
+    }
+    /* 検索表示 */
+    .search {
+        /* 文字 */
+        position: absolute ;    /* 文字（基準） */
+        top: 100px;    /* 文字（上からの高さ） */
+        left: 55%;    /* 文字（左） */
+        width: 350px;    /* 横幅 */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+    }
+    /* 検索Box */
+    .search_box {
+        /* Box */
+        position: absolute ;    /* Box（基準） */
+        width: 300px;    /* 横幅 */
+    }
+    /* 検索ボタン */
+    .search_button {
+        /* ボタン */
+        position: absolute ;    /* ボタン（基準） */
+        left: 299px;    /* 文字（左） */
+    }
+}
+/* レスポンシブル 1400px */
+@media (max-width: 1400px) {
+    /* 名言一覧 */
+    .table {
+        /* テーブル */
+        position: absolute ;    /* テーブル（基準） */
+        top: 300px;    /* テーブル（上からの高さ） */
+        left: 50%;    /* テーブル（中央） */
+        transform: translateY(-50%) translateX(-50%);    /* テーブル（中央） */
+        width: 800px;    /* 横幅 */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        font-size: 15px;    /* 文字サイズ */
+    }
+    /* 検索 */
+    .search_all{
+        /* Box */
+        position: absolute ;    /* Box（基準） */
+        top: 130px;    /* Box（上からの高さ） */
+        left: 55%;    /* Box（左） */
+        display: inline-flex;    /* 要素の横並び */
+    }
+    /* 検索表示 */
+    .search {
+        /* 文字 */
+        position: absolute ;    /* 文字（基準） */
+        top: 100px;    /* 文字（上からの高さ） */
+        left: 55%;    /* 文字（左） */
+        width: 350px;    /* 横幅 */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+    }
+    /* 検索Box */
+    .search_box {
+        /* Box */
+        position: absolute ;    /* Box（基準） */
+        width: 250px;    /* 横幅 */
+    }
+    /* 検索ボタン */
+    .search_button {
+        /* ボタン */
+        position: absolute ;    /* ボタン（基準） */
+        left: 249px;    /* 文字（左） */
+    }
+}
+/* レスポンシブル 992px */
+@media (max-width: 992px) {
+    /* 名言一覧 */
+    .table {
+        /* テーブル */
+        position: absolute ;    /* テーブル（基準） */
+        top: 300px;    /* テーブル（上からの高さ） */
+        left: 50%;    /* テーブル（中央） */
+        transform: translateY(-50%) translateX(-50%);    /* テーブル（中央） */
+        width: 600px;    /* 横幅 */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        font-size: 15px;    /* 文字サイズ */
+    }
+    /* 検索 */
+    .search_all{
+        /* Box */
+        position: absolute ;    /* Box（基準） */
+        top: 130px;    /* Box（上からの高さ） */
+        left: 45%;    /* Box（左） */
+        display: inline-flex;    /* 要素の横並び */
+    }
+    /* 検索表示 */
+    .search {
+        /* 文字 */
+        position: absolute ;    /* 文字（基準） */
+        top: 100px;    /* 文字（上からの高さ） */
+        left: 45%;    /* 文字（左） */
+        width: 350px;    /* 横幅 */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+    }
+    /* 検索Box */
+    .search_box {
+        /* Box */
+        position: absolute ;    /* Box（基準） */
+        width: 250px;    /* 横幅 */
+    }
+    /* 検索ボタン */
+    .search_button {
+        /* ボタン */
+        position: absolute ;    /* ボタン（基準） */
+        left: 249px;    /* 文字（左） */
+    }
+}
+/* レスポンシブル 768px */
+@media (max-width: 768px) {
+    /* 名言一覧 */
+    .table {
+        /* テーブル */
+        position: absolute ;    /* テーブル（基準） */
+        top: 300px;    /* テーブル（上からの高さ） */
+        left: 50%;    /* テーブル（中央） */
+        transform: translateY(-50%) translateX(-50%);    /* テーブル（中央） */
+        width: 500px;    /* 横幅 */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        font-size: 15px;    /* 文字サイズ */
+    }
+    /* 検索 */
+    .search_all{
+        /* Box */
+        position: absolute ;    /* Box（基準） */
+        top: 130px;    /* Box（上からの高さ） */
+        left: 40%;    /* Box（左） */
+        display: inline-flex;    /* 要素の横並び */
+    }
+    /* 検索表示 */
+    .search {
+        /* 文字 */
+        position: absolute ;    /* 文字（基準） */
+        top: 100px;    /* 文字（上からの高さ） */
+        left: 40%;    /* 文字（左） */
+        width: 350px;    /* 横幅 */
+        font-size: 15px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+    }
+    /* 検索Box */
+    .search_box {
+        /* Box */
+        position: absolute ;    /* Box（基準） */
+        width: 250px;    /* 横幅 */
+    }
+    /* 検索ボタン */
+    .search_button {
+        /* ボタン */
+        position: absolute ;    /* ボタン（基準） */
+        left: 249px;    /* 文字（左） */
+    }
+}
+/* レスポンシブル 575px */
+@media (max-width: 576px) {
+    /* 名言一覧 */
+    .table {
+        /* テーブル */
+        position: absolute ;    /* テーブル（基準） */
+        top: 300px;    /* テーブル（上からの高さ） */
+        left: 50%;    /* テーブル（中央） */
+        transform: translateY(-50%) translateX(-50%);    /* テーブル（中央） */
+        width: 70%;    /* 横幅 */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+        font-size: 15px;    /* 文字サイズ */
+    }
+
+    /* 検索 */
+    .search_all{
+        /* Box */
+        position: absolute ;    /* Box（基準） */
+        top: 130px;    /* Box（上からの高さ） */
+        left: 35%;    /* Box（左） */
+        display: inline-flex;    /* 要素の横並び */
+    }
+    /* 検索表示 */
+    .search {
+        /* 文字 */
+        position: absolute ;    /* 文字（基準） */
+        top: 100px;    /* 文字（上からの高さ） */
+        left: 35%;    /* 文字（左） */
+        width: 350px;    /* 横幅 */
+        font-size: 13px;    /* 文字サイズ */
+        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
+    }
+    /* 検索Box */
+    .search_box {
+        /* Box */
+        position: absolute ;    /* Box（基準） */
+        width: 200px;    /* 横幅 */
+        font-size: 13px;    /* 文字サイズ */
+    }
+    /* 検索ボタン */
+    .search_button {
+        /* ボタン */
+        position: absolute ;    /* ボタン（基準） */
+        left: 199px;    /* 文字（左） */
+        font-size: 13px;    /* 文字サイズ */
+    }
+}

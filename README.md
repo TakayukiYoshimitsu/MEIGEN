@@ -45,7 +45,30 @@
 
 
 
+##### 環境
+
+Front : HTML, CSS, Vue.js( JavaScript )
+
+Back  : Python
+
+DB     :テスト : SQLite
+
+​			本番    :RDS(MySQL)  
+
 
 
 ##### 環境構築
 
+install（back end）
+
+・fastapi
+
+・uvicorn
+
+・aqlalchemy
+
+・jinja2
+
+その他（back end）
+
+・src:ディレクトリをマーク

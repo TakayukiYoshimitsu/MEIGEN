@@ -13,6 +13,15 @@ class MeigenDao:
         """
         self.session = session
 
+    def get_meigens_count(self):
+        """
+        DBに登録されている名言の個数を取得
+        Returns:処理が正常：登録されている名言の個数
+                処理が異常：False
+        """
+        meigen = self.session.query(MeigenDto).count()
+        return meigen
+
     def get_meigen_by_id(self, meigen_id):
         """
         DBに登録されている1つの名言を取得

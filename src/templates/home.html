@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="jp">
 <head>
     <meta charset="UTF-8">
     <title>HOME画面</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="../bootstrap/assets/favicon.ico"/>
+    <link rel="icon" type="image/x-icon" href="../static/assets/favicon.ico"/>
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="../bootstrap/css/style.css" rel="stylesheet"/>
+    <link href="../static/css/bootstrap_style.css" rel="stylesheet"/>
     <!-- CSS -->
     <link href="../static/css/home.css" rel="stylesheet"/>
 </head>
-<body>
+<body  onload="LoadDate();LoadTime()">
 <div class="d-flex" id="wrapper">
     <!-- サイドバー-->
     <div class="border-end bg-white" id="sidebar-wrapper">
         <div class="list-group list-group-flush">
-            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">HOME画面</a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">名言とうろく</a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">名言いちらん</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" onclick="home()">HOME画面</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" onclick="home()">名言とうろく</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" onclick="home()">名言いちらん</a>
         </div>
     </div>
     <!-- ヘッダー-->
     <div id="page-content-wrapper">
         <!-- ヘッダー内情報-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-secondary border-bottom">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
             <div class="container-fluid">
                 <button class="btn btn-secondary" id="sidebarToggle">メニュー表示</button>
                 <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
@@ -33,8 +33,8 @@
         </nav>
     </div>
     <!-- ページ内容-->
-    <p class="date">2021年 10月 23日</p>
-    <p class="time">11：23：50</p>
+    <p class="date" id="Date"></p>
+    <p class="time" id="Time"></p>
     <div class="shadow p-3 mb-5 bg-white rounded">{{ meigen.meigen }}
         <ul class="author">{{ meigen.author }}</ul>
     </div>
@@ -42,7 +42,7 @@
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
-<script src="../bootstrap/js/script.js"></script>
+<script src="../static/js/bootstrap_script.js"></script>
 <!-- JavaScript -->
 <script src="../static/js/home.js"></script>
 </body>

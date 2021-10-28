@@ -31,7 +31,7 @@ class MeigenDao:
         meigen = self.session.query(MeigenDto).filter_by(id=meigen_id).first()
         return meigen
 
-    def insert(self, meigen_data):
+    def insert_meigen(self, meigen_data):
         """
         名言をDBに追加する
         :param meigen_data:  名言オブジェクト

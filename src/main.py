@@ -10,6 +10,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, Session
 
 from app.meigen_service import MeigenService
+from app.meigen_db import MeigenRequest
 
 import os
 
@@ -42,7 +43,7 @@ def get_session():
 @app.get("/", response_class=HTMLResponse)
 def meigen_home(request: Request, db: Session = Depends(get_session)):
     """
-    名言を表示
+    HOME画面画面に画面遷移、名言を表示
     Args:
         request: HOME画面取得リクエスト
         db: DBとの接続
@@ -54,12 +55,40 @@ def meigen_home(request: Request, db: Session = Depends(get_session)):
     meigen = meigen_service.get_schedule_by_id()
 
     # # DBからデータを取得できなかった時のエラー処理
-    # if not schedules:
+    # if not meigen:
     #     print('sever error')
-    #     # return templates.TemplateResponse("error500.html", {"request": request})
+    #     return templates.TemplateResponse("error500.html", {"request": request})
 
     # HOME画面を表示
     return templates.TemplateResponse("home.html", {"request": request, "meigen": meigen})
+
+
+@app.get("/entry", response_class=HTMLResponse)
+def meigen_entry(request: Request):
+    """
+    とうろく画面に遷移
+    Args:
+        request: とうろく画面取得リクエスト
+    """
+    # とうろく画面を表示
+    return templates.TemplateResponse("entry.html", {"request": request})
+
+
+@app.post('/entry', status_code=201)
+def entry_meigen(meigen: MeigenRequest, db: Session = Depends(get_session)):
+    """
+    スケジュールの登録
+    :param meigen: 登録するスケジュール
+    :param db: DBとの接続
+
+    """
+    meigen_Service = MeigenService(db)
+    meigen_Service.entry_meigen(meigen)
+    # TODO
+    # success = meigen_Service.entry_meigen(meigen)
+    # DBにスケジュールを登録できなかった時のエラー処理    :return: 処理が正常に行われない場合はエラー番号500
+    # if not success:
+    #     return JSONResponse(status_code=status.HTTP_500_CREATED, content=item)
 
 
 if __name__ == "__main__":

@@ -15,7 +15,7 @@ class MeigenService:
         """
         self.database = MeigenDao(session)
 
-    def get_schedule_by_id(self):
+    def get_meigen_by_random_id(self):
         """
         DBに登録されている1つの名言をランダムで取得
         Returns:処理が正常:名言
@@ -41,3 +41,27 @@ class MeigenService:
             author=meigen_data.author,
         )
         return self.database.insert_meigen(meigen_record)
+
+    def get_meigens(self):
+        """
+        登録されている名言情報の一覧を取得
+        Returns:処理が正常：全ての名言情報
+                処理が異常：False
+        """
+        return self.database.get_meigens()
+
+    def get_meigen_by_id(self, meigen_id):
+        """
+        選択された名言を取得
+        Returns:処理が正常:名言
+                処理が異常:False
+        """
+        return self.database.get_meigen_by_id(meigen_id)
+
+    def search_meigens(self, search_word):
+        """
+        検索内容に一致した全ての名言情報を取得
+        Returns:処理が正常：検索に一致した全ての名言情報
+                処理が異常：False
+        """
+        return self.database.search_meigens(search_word)

@@ -65,3 +65,25 @@ class MeigenService:
                 処理が異常：False
         """
         return self.database.search_meigens(search_word)
+
+    def update_meigen(self, meigen_data, meigen_id):
+        """
+        DBに登録済みの名言情報を入力された内容で更新
+        Args:
+            meigen_data: 入力された名言の更新内容
+            meigen_id: 更新する名言のID
+        Returns:処理が正常：True
+                処理が異常：False
+        """
+        return self.database.update_meigen(meigen_data, meigen_id)
+
+    def delete_meigen(self, meigen_id):
+        """
+        選択された名言を削除する
+        Args:
+            meigen_id: 削除する名言のID
+
+        Returns:処理が正常：True
+                処理が異常：False
+        """
+        return self.database.delete_meigen(meigen_id)

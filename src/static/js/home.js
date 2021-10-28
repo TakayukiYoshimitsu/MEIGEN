@@ -1,12 +1,15 @@
 function home(){
+    // HOME画面に画面遷移
     window.location.href = "/"
 }
 
-function home1(){
+function entry(){
+    // とうろく画面に画面遷移
     window.location.href = "/entry"
 }
 
-function home2(){
+function meigenList(){
+    // いちらん画面に画面遷移
     window.location.href = "/meigen_list"
 }
 

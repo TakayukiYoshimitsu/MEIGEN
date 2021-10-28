@@ -20,9 +20,7 @@ function entryMeigen(){
 
     //　比較
     if (Meigen === ""){
-      alert('タイトルが空です。')
-    } else if (Author === ""){
-      alert('開始時刻が空です。')
+      alert('名言が空欄です。')
     } else {
         if(window.confirm('登録してよろしいですか？')){
 

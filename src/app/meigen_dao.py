@@ -99,3 +99,41 @@ class MeigenDao:
         # DBから情報を取得するときのエラー処理
         except SQLAlchemyError:
             return False
+
+    def update_meigen(self, meigen_date, meigen_id):
+        """
+        DBに登録済みの名言情報を入力された内容で更新
+        Args:
+            meigen_date:入力された名言の更新内容
+            meigen_id:更新する名言のID
+        Returns:処理が正常：True
+                処理が異常：False
+
+        """
+        # DBの名言情報を更新するときのエラー処理
+        try:
+            update_meigen = self.session.query(MeigenDto).get(meigen_id)
+            update_meigen.meigen = meigen_date.meigen
+            update_meigen.author = meigen_date.author
+            self.session.commit()
+            return True
+        except SQLAlchemyError:
+            return False
+
+    def delete_meigen(self, meigen_id):
+        """
+        DBから選択された名言を削除する
+        Args:
+            meigen_id: 削除する名言のID
+
+        Returns:処理が正常：True
+                処理が異常：False
+
+        """
+        # DBから情報を削除するときのエラー処理
+        try:
+            self.session.query(MeigenDto).filter(MeigenDto.id == meigen_id).delete()
+            self.session.commit()
+            return True
+        except SQLAlchemyError:
+            return False

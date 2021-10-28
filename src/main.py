@@ -149,11 +149,32 @@ def search_meigen(request: Request, search_word: str, db: Session = Depends(get_
     return templates.TemplateResponse("meigen_list.html", {"request": request, "meigens": meigens})
 
 
+@app.get('/delete/{meigen_id}', status_code=201)
+def delete_schedule(meigen_id: int, db: Session = Depends(get_session)):
+    """
+    名言を削除する
+    Args:
+        meigen_id: 削除するスケジュールのID
+        db: DBとの接続
+
+    Returns:　処理が正常ならTrue,処理が正常でないならFalse
+
+    """
+    meigen_Service = MeigenService(db)
+    meigen_Service.delete_meigen(meigen_id)
+
+    # TODO
+    # # 削除が成功しなかった時のエラー処理
+    # success = meigen_Service.delete_meigen(meigen_id)
+    # if not success:
+    #     return JSONResponse(status_code=status.HTTP_500_CREATED)
+
+
 @app.post('/entry', status_code=201)
 def entry_meigen(meigen: MeigenRequest, db: Session = Depends(get_session)):
     """
-    スケジュールの登録
-    :param meigen: 登録するスケジュール
+    名言の登録
+    :param meigen: 入力された名言情報
     :param db: DBとの接続
 
     """
@@ -162,6 +183,26 @@ def entry_meigen(meigen: MeigenRequest, db: Session = Depends(get_session)):
     # TODO
     # success = meigen_Service.entry_meigen(meigen)
     # DBにスケジュールを登録できなかった時のエラー処理    :return: 処理が正常に行われない場合はエラー番号500
+    # if not success:
+    #     return JSONResponse(status_code=status.HTTP_500_CREATED, content=item)
+
+
+@app.post('/update/{meigen_id}', status_code=201)
+def update_schedule(meigen: MeigenRequest, meigen_id: int, db: Session = Depends(get_session)):
+    """
+    スケジュールの更新
+    Args:
+        meigen: 入力された名言の更新内容
+        meigen_id:　更新する名言のID
+        db:　DBとの接続
+
+    Returns:　
+
+    """
+    meigen_Service = MeigenService(db)
+    meigen_Service.update_meigen(meigen, meigen_id)
+    # success = meigen_Service.update_meigen(schedule, meigen_id)
+    # # DBにスケジュールを登録できなかった時のエラー処理    :return: 処理が正常に行われない場合はエラー番号500
     # if not success:
     #     return JSONResponse(status_code=status.HTTP_500_CREATED, content=item)
 

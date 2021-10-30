@@ -23,6 +23,8 @@ class MeigenService:
         """
         # DBに登録されている名言の個数をカウント
         meigens_count = self.database.get_meigens_count()
+        if not meigens_count:
+            return False
 
         # 名言をランダムで取得
         meigen_id = random.randint(1, meigens_count)

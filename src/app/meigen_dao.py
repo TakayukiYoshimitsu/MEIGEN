@@ -19,8 +19,12 @@ class MeigenDao:
         Returns:処理が正常：登録されている名言の個数
                 処理が異常：False
         """
-        meigen = self.session.query(MeigenDto).count()
-        return meigen
+        # DBに登録されている名言の個数を取得するときのエラー処理
+        try:
+            meigen = self.session.query(MeigenDto).count()
+            return meigen
+        except SQLAlchemyError:
+            return False
 
     def get_meigen_by_id(self, meigen_id):
         """
@@ -30,8 +34,12 @@ class MeigenDao:
         Returns:処理が正常：名言
                 処理が異常：False
         """
-        meigen = self.session.query(MeigenDto).filter_by(id=meigen_id).first()
-        return meigen
+        # DBから情報を取得するときのエラー処理
+        try:
+            meigen = self.session.query(MeigenDto).filter_by(id=meigen_id).first()
+            return meigen
+        except SQLAlchemyError:
+            return False
 
     def insert_meigen(self, meigen_data):
         """
@@ -108,7 +116,6 @@ class MeigenDao:
             meigen_id:更新する名言のID
         Returns:処理が正常：True
                 処理が異常：False
-
         """
         # DBの名言情報を更新するときのエラー処理
         try:
@@ -118,6 +125,7 @@ class MeigenDao:
             self.session.commit()
             return True
         except SQLAlchemyError:
+            self.session.rollback()
             return False
 
     def delete_meigen(self, meigen_id):
@@ -125,10 +133,8 @@ class MeigenDao:
         DBから選択された名言を削除する
         Args:
             meigen_id: 削除する名言のID
-
         Returns:処理が正常：True
                 処理が異常：False
-
         """
         # DBから情報を削除するときのエラー処理
         try:
@@ -136,4 +142,5 @@ class MeigenDao:
             self.session.commit()
             return True
         except SQLAlchemyError:
+            self.session.rollback()
             return False

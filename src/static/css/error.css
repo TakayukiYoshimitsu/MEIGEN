@@ -1,27 +1,14 @@
 /* レスポンシブル 1400px */
 @media (min-width: 1400px) {
-    /* 日付表示 */
-    .date{
-        /* 文字 */
-        position: absolute ;    /* 文字位置（基準） */
-        top: 200px;    /* 文字位置（上からの高さ） */
-        left: 50%;    /* Box位置（中央） */
-        transform: translateY(-50%) translateX(-50%);    /* Box位置（中央） */
-        text-align:center;    /* 文字位置（中央） */
-        font-size: 60px;    /* 文字サイズ */
-        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
-        white-space: nowrap;  /* 機能；折り返さない */
-    }
-
-    /* 時間表示 */
-    .time{
+    /* エラー表示 */
+    .error_text{
         /* 文字 */
         position: absolute ;    /* 文字位置（基準） */
         top: 325px;    /* 文字位置（上からの高さ） */
         left: 50%;    /* Box位置（中央） */
         transform: translateY(-50%) translateX(-50%);    /* Box位置（中央） */
         text-align:center;    /* 文字位置（中央） */
-        font-size: 130px;    /* 文字サイズ */
+        font-size: 70px;    /* 文字サイズ */
         font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
         white-space: nowrap;  /* 機能；折り返さない */
     }
@@ -58,28 +45,15 @@
 
 /* レスポンシブル 1400px */
 @media (max-width: 1400px) {
-    /* 日付表示 */
-    .date{
-        /* 文字 */
-        position: absolute ;    /* 文字位置（基準） */
-        top: 150px;    /* 文字位置（上からの高さ） */
-        left: 50%;    /* Box位置（中央） */
-        transform: translateY(-50%) translateX(-50%);    /* Box位置（中央） */
-        text-align:center;    /* 文字位置（中央） */
-        font-size: 45px;    /* 文字サイズ */
-        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
-        white-space: nowrap;  /* 機能；折り返さない */
-    }
-
-    /* 時間表示 */
-    .time{
+    /* エラー表示 */
+    .error_text{
         /* 文字 */
         position: absolute ;    /* 文字位置（基準） */
         top: 275px;    /* 文字位置（上からの高さ） */
         left: 50%;    /* Box位置（中央） */
         transform: translateY(-50%) translateX(-50%);    /* Box位置（中央） */
         text-align:center;    /* 文字位置（中央） */
-        font-size: 100px;    /* 文字サイズ */
+        font-size: 50px;    /* 文字サイズ */
         font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
         white-space: nowrap;  /* 機能；折り返さない */
     }
@@ -88,7 +62,7 @@
     .rounded{
         /* Box */
         position: absolute ;    /* 文字位置（基準） */
-        top: 550px;    /* 文字位置（上からの高さ） */
+        top: 500px;    /* 文字位置（上からの高さ） */
         width: 70%;    /* 横幅の設定 */
         height: 25%;
         border: 1px solid;  /* 枠の幅 */
@@ -115,28 +89,15 @@
 
 /* レスポンシブル 992px */
 @media (max-width: 992px) {
-    /* 日付表示 */
-    .date{
+    /* エラー表示 */
+    .error_text{
         /* 文字 */
         position: absolute ;    /* 文字位置（基準） */
-        top: 150px;    /* 文字位置（上からの高さ） */
+        top: 250px;    /* 文字位置（上からの高さ） */
         left: 50%;    /* Box位置（中央） */
         transform: translateY(-50%) translateX(-50%);    /* Box位置（中央） */
         text-align:center;    /* 文字位置（中央） */
-        font-size: 30px;    /* 文字サイズ */
-        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
-        white-space: nowrap;  /* 機能；折り返さない */
-    }
-
-    /* 時間表示 */
-    .time{
-        /* 文字 */
-        position: absolute ;    /* 文字位置（基準） */
-        top: 200px;    /* 文字位置（上からの高さ） */
-        left: 50%;    /* Box位置（中央） */
-        transform: translateY(-50%) translateX(-50%);    /* Box位置（中央） */
-        text-align:center;    /* 文字位置（中央） */
-        font-size: 60px;    /* 文字サイズ */
+        font-size: 40px;    /* 文字サイズ */
         font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
         white-space: nowrap;  /* 機能；折り返さない */
     }
@@ -145,7 +106,7 @@
     .rounded{
         /* Box */
         position: absolute ;    /* 文字位置（基準） */
-        top: 400px;    /* 文字位置（上からの高さ） */
+        top: 450px;    /* 文字位置（上からの高さ） */
         width: 70%;    /* 横幅の設定 */
         height: 20%;
         border: 1px solid;  /* 枠の幅 */
@@ -172,26 +133,14 @@
 
 /* レスポンシブル 768px */
 @media (max-width: 768px) {
-    /* 日付表示 */
-    .date{
-        /* 文字 */
-        position: absolute ;    /* 文字位置（基準） */
-        top: 150px;    /* 文字位置（上からの高さ） */
-        width: 100%;    /* 横幅の設定 */
-        text-align:center;    /* 文字位置（中央） */
-        font-size: 25px;    /* 文字サイズ */
-        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
-        white-space: nowrap;  /* 機能；折り返さない */
-    }
-
-    /* 時間表示 */
+    /* エラー表示 */
     .time{
         /* 文字 */
         position: absolute ;    /* 文字位置（基準） */
         top: 200px;    /* 文字位置（上からの高さ） */
         width: 100%;    /* 横幅の設定 */
         text-align:center;    /* 文字位置（中央） */
-        font-size: 50px;    /* 文字サイズ */
+        font-size: 30px;    /* 文字サイズ */
         font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
         white-space: nowrap;  /* 機能；折り返さない */
     }
@@ -200,7 +149,7 @@
     .rounded{
         /* Box */
         position: absolute ;    /* 文字位置（基準） */
-        top: 400px;    /* 文字位置（上からの高さ） */
+        top: 450px;    /* 文字位置（上からの高さ） */
         width: 70%;    /* 横幅の設定 */
         height: 25%;
         border: 1px solid;  /* 枠の幅 */
@@ -227,11 +176,11 @@
 
 /* レスポンシブル 575px */
 @media (max-width: 576px) {
-    /* 日付表示 */
-    .date{
+    /* エラー表示 */
+    .error_text{
         /* 文字 */
         position: absolute ;    /* 文字位置（基準） */
-        top: 150px;    /* 文字位置（上からの高さ） */
+        top: 200px;    /* 文字位置（上からの高さ） */
         left: 50%;    /* Box位置（中央） */
         transform: translateY(-50%) translateX(-50%);    /* Box位置（中央） */
         text-align:center;    /* 文字位置（中央） */
@@ -240,24 +189,11 @@
         white-space: nowrap;  /* 機能；折り返さない */
     }
 
-    /* 時間表示 */
-    .time{
-        /* 文字 */
-        position: absolute ;    /* 文字位置（基準） */
-        top: 200px;    /* 文字位置（上からの高さ） */
-        left: 50%;    /* Box位置（中央） */
-        transform: translateY(-50%) translateX(-50%);    /* Box位置（中央） */
-        text-align:center;    /* 文字位置（中央） */
-        font-size: 40px;    /* 文字サイズ */
-        font-family: "游明朝 Demibold" ;   /* 文字フォント；游明朝 Demibold */
-        white-space: nowrap;  /* 機能；折り返さない */
-    }
-
     /* 名言表示 */
     .rounded{
         /* Box */
         position: absolute ;    /* 文字位置（基準） */
-        top: 400px;    /* 文字位置（上からの高さ） */
+        top: 450px;    /* 文字位置（上からの高さ） */
         width: 70%;    /* 横幅の設定 */
         height: 25%;
         border: 1px solid;  /* 枠の幅 */

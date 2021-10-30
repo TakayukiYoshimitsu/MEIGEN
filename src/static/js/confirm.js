@@ -46,8 +46,7 @@ function updateMeigen(meigen_id){
                     // リクエスト送信後トップページに移行
                     window.location.href = "/"
                 }else{
-                      // TODO
-//                    window.location.href = "/server_error"
+                    window.location.href = "/500"
                 }
             })
         }
@@ -66,8 +65,7 @@ function deleteMeigen(meigen_id){
             // リクエスト送信後トップページに移行する
             window.location.href = "/"
         }else{
-              // TODO
-//            window.location.href = "/server_error"
+            window.location.href = "/500"
         }
     })
    }

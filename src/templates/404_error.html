@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="jp">
 <head>
     <meta charset="UTF-8">
-    <title>いちらん画面</title>
+    <title>HOME画面</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="../static/assets/favicon.ico"/>
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="../static/css/bootstrap_style.css" rel="stylesheet"/>
     <!-- CSS -->
-    <link href="../static/css/meigen_list.css" rel="stylesheet"/>
+    <link href="../static/css/error.css" rel="stylesheet"/>
 </head>
 <body>
 <div class="d-flex" id="wrapper">
@@ -33,35 +33,16 @@
         </nav>
     </div>
     <!-- ページ内容-->
-    <form>
-        <p class="search">検索したいキーワードを入力してください。</p>
-        <div class="search_all">
-            <input id="search-word" class="search_box" type="search" placeholder="キーワードを入力">
-            <input class="search_button" type="button" value="検索" onclick="searchMeigen()">
-        </div>
-        <table class="table">
-            <thead class="thead-lignt">
-            <tr>
-                <th scope="col">名言</th>
-                <th scope="col">作者</th>
-            </tr>
-            </thead>
-            <tbody>
-            <!--  {% for meigen in meigens %}  -->
-            <tr>
-                <td><a onclick="confirm({{ meigen.id }})">{{ meigen.meigen }}</td>
-                <td>{{ meigen.author }}</td>
-            </tr>
-            <!--  {% endfor %}  -->
-            </tbody>
-        </table>
-    </form>
+    <p class="error_text">404 : ページが見つかりません</p>
+    <div class="shadow p-3 mb-5 bg-white rounded">ベストを尽くして失敗したら、ベストを尽くしたってことさ
+        <ul class="author">スティーブ・ジョブズ</ul>
+    </div>
 </div>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
 <script src="../static/js/bootstrap_script.js"></script>
 <!-- JavaScript -->
-<script src="../static/js/meigen_list.js"></script>
+<script src="../static/js/error.js"></script>
 </body>
 </html>

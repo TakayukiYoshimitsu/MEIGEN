@@ -46,8 +46,7 @@ function entryMeigen(){
                     // リクエスト送信後トップページに移行
                     window.location.href = "/"
                 }else{
-                // TODO
-//                    window.location.href = "/server_error"
+                    window.location.href = "/500"
                 }
             })
         }

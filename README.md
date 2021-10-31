@@ -5,11 +5,11 @@
 
 ##### 機能
 
-- [ ] 名言が表示される
-- [ ] 日付と時間が表示される
-- [ ] 名言の登録
-- [ ] 名言の更新
-- [ ] 名言の削除
+- [x] 名言が表示される
+- [x] 日付と時間が表示される
+- [x] 名言の登録
+- [x] 名言の更新
+- [x] 名言の削除
 
 （以下追加実装予定）
 
@@ -47,13 +47,11 @@
 
 ##### 環境
 
-Front : HTML, CSS, Vue.js( JavaScript )
+Front : HTML, CSS, JavaScript 
 
-Back  : Python
+Back  : Python(framework:FastAPI)
 
-DB     :テスト : SQLite
-
-​			本番    :RDS(MySQL)  
+DB     :SQLite
 
 
 

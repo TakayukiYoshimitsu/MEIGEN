@@ -1,5 +1,5 @@
-from app.meigen_dao import MeigenDao
-from app.meigen_db import MeigenDto
+from src.app.meigen_dao import MeigenDao
+from src.app.meigen_db import MeigenDto
 
 import random
 

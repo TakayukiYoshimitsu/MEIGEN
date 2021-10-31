@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-from app.meigen_dao import MeigenDao
+from src.app.meigen_dao import MeigenDao
 from src.app.meigen_db import MeigenDto
 
 
@@ -19,7 +19,7 @@ def init_app():
     ]
 
     for data in init_meigen_data:
-        meigen_database.insert(data)
+        meigen_database.insert_meigen(data)
 
 
 if __name__ == "__main__":

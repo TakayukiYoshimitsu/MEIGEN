@@ -1,4 +1,4 @@
-from app.meigen_db import MeigenDto
+from src.app.meigen_db import MeigenDto
 
 from sqlalchemy.exc import SQLAlchemyError
 

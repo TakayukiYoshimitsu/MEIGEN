@@ -1,8 +1,8 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-from src.app.meigen_dao import MeigenDao
-from src.app.meigen_db import MeigenDto
+from app.meigen_dao import MeigenDao
+from app.meigen_db import MeigenDto
 
 
 def init_app():
